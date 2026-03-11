@@ -1,7 +1,9 @@
 module.exports = function(eleventyConfig) {
 
-  // assets (CSS, JS, Bilder) durchreichen
-  eleventyConfig.addPassthroughCopy("src/assets");
+  // Assets durchreichen
+  eleventyConfig.addPassthroughCopy({
+    "src/assets": "assets"
+  });
 
   return {
     dir: {
@@ -11,5 +13,4 @@ module.exports = function(eleventyConfig) {
       data: "_data"
     }
   };
-
 };
