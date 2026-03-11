@@ -1027,9 +1027,18 @@ footer .container {
 .footer-links {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-links a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
 
 .footer-links a {
